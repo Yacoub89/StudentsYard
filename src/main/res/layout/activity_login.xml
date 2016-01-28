@@ -1,0 +1,82 @@
+
+        <RelativeLayout
+            android:background="@drawable/android"
+            android:id="@+id/login_form"
+       		 android:layout_width="match_parent"
+       		 android:layout_height="match_parent" 
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		tools:context=".LoginActivity" >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_user_name"
+                android:textColorHint="#FFFFFFFF"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+              <EditText
+                  android:id="@+id/password"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@+id/email"
+                  android:layout_alignStart="@+id/email"
+                  android:layout_below="@+id/email"
+                  android:layout_marginTop="14dp"
+                  android:ems="10"
+                  android:hint="@string/prompt_password"
+                  android:textColorHint="#FFFFFFFF"
+                  android:imeActionId="@+id/login"
+                  android:imeActionLabel="@string/action_sign_in_short"
+                  android:imeOptions="actionUnspecified"
+                  android:inputType="textPassword"
+                  android:maxLines="1"
+                  android:singleLine="true" />
+
+              <Button
+                  android:id="@+id/guest_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@+id/password"
+                  android:layout_alignStart="@+id/password"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignRight="@+id/password"
+                  android:paddingLeft="32dp"
+                  android:paddingRight="32dp"
+                  android:text="@string/action_Guest" />
+
+              <Button
+                  android:id="@+id/sign_in_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_above="@+id/textView1"
+
+                  android:layout_alignLeft="@+id/guest_button"
+                  android:layout_alignRight="@+id/guest_button"
+
+                  android:layout_marginBottom="19dp"
+                  android:paddingLeft="32dp"
+                  android:paddingRight="32dp"
+                  android:text="@string/Login" />
+
+              <TextView
+                  android:id="@+id/textView1"
+                  android:layout_width="78dp"
+                  android:layout_height="wrap_content"
+                  android:layout_above="@+id/guest_button"
+                  android:layout_alignRight="@+id/sign_in_button"
+                  android:layout_marginBottom="19dp"
+                  android:layout_marginRight="102dp"
+                  android:text= "@string/OR"
+                  android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+        </RelativeLayout>
+
+
